@@ -1,0 +1,19 @@
+<%- include('partials/header'); %>
+
+<h1>Home</h1>
+<p><%= initial %></p>
+
+<% for( let index = 0; index < postContent.length; index++ ) { %>
+
+    <h1><%= postContent[index].title %> </h1>
+    <p><%= postContent[index].content.substring(0,99) + "..."  %> <a href="/posts/<%=postContent[index].title%>" >Read More</a> </p>
+    
+
+<% } %>
+
+<div style="margin-top: 2rem; margin-bottom: 2rem;"> 
+<a  class="btn btn-info" href ="/compose">Create new</a>
+</div>
+
+
+<%- include('partials/footer'); %>
