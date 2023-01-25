@@ -91,4 +91,3 @@ app.listen( process.env.PORT || 3000, function () {
 
 // vercel changes - Export the Express API
 
-module.exports = app;
