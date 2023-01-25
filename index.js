@@ -88,3 +88,7 @@ app.get("/posts/:value",(req,res)=>{
 app.listen( process.env.PORT || 3000, function () {
   console.log("Server started on port 3000");
 });
+
+// vercel changes - Export the Express API
+
+module.exports = app;
